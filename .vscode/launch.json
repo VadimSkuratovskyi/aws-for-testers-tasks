@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "name": "Run Jest Tests",
+            "request": "launch",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": ["run-script", "test"],
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "env": {
+                "AWS_PROFILE": "aws-for-testers",
+                "NODE_ENV": "test"
+            },
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        }
+    ]
+}
